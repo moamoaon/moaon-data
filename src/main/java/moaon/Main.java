@@ -39,7 +39,7 @@ public class Main {
 
         System.out.println("========== Gemini 작업 시작 ==========");
         final Articles articles = new Articles();
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < inputRows.size(); i++) {
             final String[] row = inputRows.get(i);
             final Article article = new Article(row);
             System.out.printf("Row: %d | Article ID: %d - 시작%n", i, article.getId());
